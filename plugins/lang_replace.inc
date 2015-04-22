@@ -45,7 +45,7 @@ function language_tamper_callback($source, $item_key, $element_key, &$field, $se
       foreach ($trad as $search => $replace) {
         $f = str_replace($search, $replace, $f);
       }
-      $out = $f;
+      $out[] = $f;
     }
   }
   $field = $out;
