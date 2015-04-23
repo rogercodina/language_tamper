@@ -48,5 +48,8 @@ function language_tamper_callback($source, $item_key, $element_key, &$field, $se
       $out[] = $f;
     }
   }
+  if (count($out) == 1) {
+    $out = $out[0];
+  }
   $field = $out;
 }
